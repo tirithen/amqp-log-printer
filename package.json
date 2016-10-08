@@ -1,0 +1,23 @@
+{
+  "name": "amqp-logging-printer",
+  "version": "0.1.0",
+  "description": "A service that prints log messages sent via an ActiveMQ with amqp",
+  "main": "index.js",
+  "scripts": {
+    "dockerimage": "docker build -t tirithen/amqp-logging-printer:0.1.0 .",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "amqp10": "^3.2.5"
+  },
+  "keywords": [
+    "amqp",
+    "activemq",
+    "logging",
+    "messaging",
+    "queues",
+    "topics"
+  ],
+  "author": "Fredrik Söderström <tirithen@gmail.com>",
+  "license": "GPL-3.0"
+}
