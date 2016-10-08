@@ -4,7 +4,7 @@
   "description": "A service that prints log messages sent via an ActiveMQ with amqp",
   "main": "index.js",
   "scripts": {
-    "dockerimage": "docker build -t tirithen/amqp-logging-printer:0.1.0 .",
+    "dockerimage": "docker build -t tirithen/amqp-logging-printer:0.1.1 .",
     "start": "node index.js"
   },
   "dependencies": {
