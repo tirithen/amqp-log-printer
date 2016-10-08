@@ -19,5 +19,13 @@
     "topics"
   ],
   "author": "Fredrik Söderström <tirithen@gmail.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tirithen/amqp-logging-printer"
+  },
+  "bugs": {
+    "url": "https://github.com/tirithen/amqp-logging-printer/issues"
+  },
+  "homepage": "https://github.com/tirithen/amqp-logging-printer"
 }
