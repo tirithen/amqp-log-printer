@@ -7,7 +7,15 @@ this.client.connect(AMQP_URL).then(() => {
   this.client.createReceiver('topic://logs').then((receiver) => {
     console.info('Listening on the logs queue');
     receiver.on('message', (message) => {
-      const level = message.body.level === 'warning' ? 'warn' : message.body.level;
+      let level = message.body.level;
+
+      if (level === 'warning') {
+        level = 'warn';
+      }
+
+      if (level === 'debug') {
+        level = 'log';
+      }
 
       if (console[level] instanceof Function) {
         if (message.body.package) {

@@ -1,6 +1,6 @@
 {
   "name": "amqp-logging-printer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A service that prints log messages sent via an ActiveMQ with amqp",
   "main": "index.js",
   "scripts": {
